@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".thirdActivity"
+    android:background="#0a0b29">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="120dp"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="#e6e6e6"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <View
+                android:id="@+id/box_title"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/custom_selector"/>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingTop="11dp"
+                android:text="Silahkan isi jadwal keberangkatan"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="110dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="horizontal">
+
+                <DatePicker
+                    android:id="@+id/datePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:calendarViewShown="true"
+                    android:datePickerMode="calendar"
+                    android:datePickerStyle="@style/DatePickerStyle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="horizontal">
+
+                <TimePicker
+                    android:id="@+id/timePicker"
+                    android:timePickerMode="spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginVertical="30dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/tombol_ketiga"
+        android:layout_marginTop="735dp"
+        android:layout_centerHorizontal="true"
+        android:text="Next"
+        android:textSize="16dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins_regular2"
+        android:textStyle="bold"
+        android:background="@drawable/custom_button"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+
+</RelativeLayout>
